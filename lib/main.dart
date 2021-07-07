@@ -1,4 +1,4 @@
-import 'package:autolux_ui/assets/mainScreen.dart';
+import 'package:autolux_ui/assets/screens/mainScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

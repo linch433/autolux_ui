@@ -1,7 +1,8 @@
-import 'package:autolux_ui/assets/mainScreen/mainButtonMenu.dart';
-import 'package:autolux_ui/assets/mainScreen/mainText.dart';
-import 'package:autolux_ui/assets/mainScreen/newsFooter.dart';
-import 'package:autolux_ui/assets/mainScreen/searchBar.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/mainButtonMenu.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/mainText.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/newsFooter.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/searchBar.dart';
+import 'package:autolux_ui/assets/widget/drawerMenu.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -31,17 +32,28 @@ class mainScreen extends StatelessWidget {
           );
         }),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
-            tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-            color: Colors.purple,
-            iconSize: 37,
+          Builder(
+            builder: (context) => IconButton(
+              icon: Icon(Icons.menu),
+              color: Colors.purple,
+              iconSize: 37,
+              onPressed: () => Scaffold.of(context).openDrawer(),
+            ),
           ),
+
+          // IconButton(
+          //   icon: const Icon(Icons.menu),
+          //   onPressed: () {
+          //     Scaffold.of(context).openEndDrawer();
+          //   },
+          //   tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+          //   color: Colors.purple,
+          //   iconSize: 37,
+          // ),
         ],
       ),
+      drawer: navigationDrawerWidget(),
+
       body: SafeArea(
         child: ListView(
           children: [

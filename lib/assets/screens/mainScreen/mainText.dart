@@ -53,7 +53,7 @@ Widget mainText = Column(
                   child: Text(
                     'ДЕТАЛЬНІШЕ',
                     style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+                        color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
                   ),
                   style: ButtonStyle(),
                 ),

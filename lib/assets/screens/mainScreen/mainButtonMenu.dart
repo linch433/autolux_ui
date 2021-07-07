@@ -11,7 +11,7 @@ Widget mainButtonMenu = Container(
             children: [
               MyButton(
                   onPressed: () {},
-                  title: 'Віділення',
+                  title: 'Відділення',
                   icon: Icons.location_on_outlined),
               MyButton(
                   onPressed: () {},
