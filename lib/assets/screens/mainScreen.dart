@@ -23,12 +23,17 @@ class mainScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.white,
         leading: Builder(builder: (BuildContext context) {
-          return IconButton(
-            padding: EdgeInsets.only(left: 13.0),
-            icon: const Icon(Icons.home),
-            onPressed: () {},
-            color: Colors.deepOrange,
-            iconSize: 37,
+          return Container(
+            margin: EdgeInsets.symmetric(horizontal: 5.0),
+            padding: EdgeInsets.only(left: 3.0),
+            child: IconButton(
+              icon: const Icon(Icons.home),
+              onPressed: () {
+                Navigator.pushNamed(context, '/');
+              },
+              color: Colors.deepOrange,
+              iconSize: 37,
+            ),
           );
         }),
         actions: [
@@ -40,16 +45,6 @@ class mainScreen extends StatelessWidget {
               onPressed: () => Scaffold.of(context).openDrawer(),
             ),
           ),
-
-          // IconButton(
-          //   icon: const Icon(Icons.menu),
-          //   onPressed: () {
-          //     Scaffold.of(context).openEndDrawer();
-          //   },
-          //   tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-          //   color: Colors.purple,
-          //   iconSize: 37,
-          // ),
         ],
       ),
       drawer: navigationDrawerWidget(),
@@ -71,7 +66,7 @@ class mainScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         tooltip: 'Online message/help',
-        child: Icon(Icons.mail),
+        child: Icon(Icons.mail, size: 25,),
       ),
     );
   }
