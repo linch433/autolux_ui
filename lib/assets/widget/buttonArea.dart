@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-class MyButton extends StatelessWidget {
-  MyButton({required this.onPressed, required this.title, required this.icon});
+import 'package:flutter/material.dart';
+
+class ButtonArea extends StatelessWidget {
+  ButtonArea({required this.onPressed, required this.title, required this.icon});
 
   final GestureTapCallback onPressed;
   final String title;
@@ -11,31 +13,27 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(10),
-      child: ElevatedButton(
+      child: TextButton(
         style: ElevatedButton.styleFrom(
-          primary: Colors.white,
-          minimumSize: Size(double.infinity, 146),
-          shadowColor: Colors.grey[600],
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+          minimumSize: Size(140, 90),
         ),
         onPressed: onPressed,
         child: Center(
           child: Column(
             children: [
-              Text(
-                title,
-                style: TextStyle(color: Colors.deepPurple, fontSize: 16),
-                maxLines: 2,
-                textAlign: TextAlign.center,
-              ),
               Container(
                 padding: EdgeInsets.only(top: 10),
                 child: Icon(
                   icon,
                   color: Colors.black,
-                  size: 35,
+                  size: 30,
                 ),
+              ),
+              Text(
+                title,
+                style: TextStyle(color: Colors.black, fontSize: 16,),
+                maxLines: 2,
+                textAlign: TextAlign.center,
               ),
             ],
           ),

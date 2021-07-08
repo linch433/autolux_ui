@@ -39,7 +39,7 @@ Widget mainText = Column(
             '\n- м. Рівне, вул. Дворецького  123-а,'
             '\n- м. Хмельницький, вул. Миру 69,'
             '\n Ласкаво просимо! ',
-            style: TextStyle(color: Colors.white, fontSize: 15),
+            style: TextStyle(color: Colors.white, fontSize: 16),
           ),
           Row(
             children: [

@@ -3,6 +3,7 @@ import 'package:autolux_ui/assets/screens/mainScreen/mainText.dart';
 import 'package:autolux_ui/assets/screens/mainScreen/newsFooter.dart';
 import 'package:autolux_ui/assets/screens/mainScreen/searchBar.dart';
 import 'package:autolux_ui/assets/widget/drawerMenu.dart';
+import 'package:autolux_ui/assets/screens/onlineHelp.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -48,7 +49,6 @@ class mainScreen extends StatelessWidget {
         ],
       ),
       drawer: navigationDrawerWidget(),
-
       body: SafeArea(
         child: ListView(
           children: [
@@ -64,9 +64,16 @@ class mainScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => onlineHelp()));
+          // Navigator.pushReplacementNamed(context, '/onlineHelp');
+        },
         tooltip: 'Online message/help',
-        child: Icon(Icons.mail, size: 25,),
+        child: Icon(
+          Icons.mail,
+          size: 25,
+        ),
       ),
     );
   }

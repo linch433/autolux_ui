@@ -1,8 +1,9 @@
-import 'package:autolux_ui/assets/screens/aboutCompany.dart';
+import 'package:autolux_ui/assets/screens/aboutCompany/aboutCompany.dart';
 import 'package:autolux_ui/assets/screens/businessClient.dart';
 import 'package:autolux_ui/assets/screens/contacts.dart';
 import 'package:autolux_ui/assets/screens/department.dart';
 import 'package:autolux_ui/assets/screens/mainScreen.dart';
+import 'package:autolux_ui/assets/screens/onlineHelp.dart';
 import 'package:autolux_ui/assets/screens/privateClient.dart';
 import 'package:autolux_ui/assets/screens/services.dart';
 import 'package:autolux_ui/assets/screens/news.dart';
@@ -23,6 +24,7 @@ void main() {
         '/news': (context) => news(),
         '/privateClient': (context) => privateClient(),
         '/services': (context) => services(),
+        '/onlineHelp': (context) =>onlineHelp(),
       },
     ),
   );

@@ -1,4 +1,4 @@
-import 'package:autolux_ui/assets/screens/aboutCompany.dart';
+import 'package:autolux_ui/assets/screens/aboutCompany/aboutCompany.dart';
 import 'package:autolux_ui/assets/screens/businessClient.dart';
 import 'package:autolux_ui/assets/screens/contacts.dart';
 import 'package:autolux_ui/assets/screens/department.dart';
@@ -16,7 +16,7 @@ Widget buildMenuItem(
     leading: Icon(icon, color: color),
     title: Text(
       text,
-      style: TextStyle(color: color),
+      style: TextStyle(color: color, fontSize: 16),
     ),
     hoverColor: hoverColor,
     onTap: onClicked,
@@ -73,37 +73,37 @@ class navigationDrawerWidget extends StatelessWidget {
 void selectedItem(BuildContext context, int index) {
   switch (index) {
     case 0:
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => aboutCompany(),
       ));
       break;
     case 1:
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => businessClient(),
       ));
       break;
     case 2:
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => privateClient(),
       ));
       break;
     case 3:
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => news(),
       ));
       break;
     case 4:
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => department(),
       ));
       break;
     case 5:
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => services(),
       ));
       break;
     case 6:
-      Navigator.of(context).push(MaterialPageRoute(
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => contact(),
       ));
       break;
