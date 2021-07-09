@@ -61,7 +61,23 @@ class department extends StatelessWidget {
             Divider(
               color: Colors.black,
             ),
-            departmentText,
+            CircleAvatar(
+              radius: 30,
+              backgroundColor: Colors.purple,
+              child: IconButton(
+                iconSize: 33,
+                tooltip: 'Google Maps',
+                  color: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => departmentText(),
+                      ),
+                    );
+                  },
+                  icon: Icon(Icons.pin_drop_outlined), ),
+            ),
           ],
         ),
       ),
