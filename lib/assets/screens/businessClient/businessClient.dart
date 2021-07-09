@@ -1,8 +1,13 @@
+import 'package:autolux_ui/assets/screens/aboutCompany/areaWithButtons.dart';
+import 'package:autolux_ui/assets/screens/businessClient/businessCLientText.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/searchBar.dart';
+import 'package:autolux_ui/assets/screens/onlineHelp.dart';
 import 'package:autolux_ui/assets/widget/drawerMenu.dart';
+import 'package:autolux_ui/assets/widget/pageTitle.dart';
 import 'package:flutter/material.dart';
 
-class department extends StatelessWidget {
-  const department({Key? key}) : super(key: key);
+class businessClient extends StatelessWidget {
+  const businessClient({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +48,6 @@ class department extends StatelessWidget {
         ],
       ),
       drawer: navigationDrawerWidget(),
-
       body: SafeArea(
         child: ListView(
           children: [
@@ -51,14 +55,26 @@ class department extends StatelessWidget {
               margin: EdgeInsets.only(bottom: 50),
             ),
             // Parts of a Screen
-
+            searchBar,
+            pageTitle(TitlePage: 'Сплата послуг'),
+            mainButtonAreaMenu,
+            Divider(
+              color: Colors.black,
+            ),
+            businessCLientText,
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => onlineHelp()));
+        },
         tooltip: 'Online message/help',
-        child: Icon(Icons.mail, size: 25,),
+        child: Icon(
+          Icons.mail,
+          size: 25,
+        ),
       ),
     );
   }

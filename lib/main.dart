@@ -1,10 +1,10 @@
 import 'package:autolux_ui/assets/screens/aboutCompany/aboutCompany.dart';
-import 'package:autolux_ui/assets/screens/businessClient.dart';
+import 'package:autolux_ui/assets/screens/businessClient/businessClient.dart';
 import 'package:autolux_ui/assets/screens/contacts.dart';
-import 'package:autolux_ui/assets/screens/department.dart';
-import 'package:autolux_ui/assets/screens/mainScreen.dart';
+import 'package:autolux_ui/assets/screens/department/department.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/mainScreen.dart';
 import 'package:autolux_ui/assets/screens/onlineHelp.dart';
-import 'package:autolux_ui/assets/screens/privateClient.dart';
+import 'package:autolux_ui/assets/screens/privateClient/privateClient.dart';
 import 'package:autolux_ui/assets/screens/services.dart';
 import 'package:autolux_ui/assets/screens/news.dart';
 import 'package:flutter/material.dart';

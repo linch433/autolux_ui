@@ -1,8 +1,13 @@
+import 'package:autolux_ui/assets/screens/aboutCompany/areaWithButtons.dart';
+import 'package:autolux_ui/assets/screens/department/departmentText.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/searchBar.dart';
+import 'package:autolux_ui/assets/screens/onlineHelp.dart';
 import 'package:autolux_ui/assets/widget/drawerMenu.dart';
+import 'package:autolux_ui/assets/widget/pageTitle.dart';
 import 'package:flutter/material.dart';
 
-class privateClient extends StatelessWidget {
-  const privateClient({Key? key}) : super(key: key);
+class department extends StatelessWidget {
+  const department({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +48,6 @@ class privateClient extends StatelessWidget {
         ],
       ),
       drawer: navigationDrawerWidget(),
-
       body: SafeArea(
         child: ListView(
           children: [
@@ -51,14 +55,27 @@ class privateClient extends StatelessWidget {
               margin: EdgeInsets.only(bottom: 50),
             ),
             // Parts of a Screen
-
+            searchBar,
+            pageTitle(TitlePage: 'Відділення'),
+            mainButtonAreaMenu,
+            Divider(
+              color: Colors.black,
+            ),
+            departmentText,
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => onlineHelp()));
+          // Navigator.pushReplacementNamed(context, '/onlineHelp');
+        },
         tooltip: 'Online message/help',
-        child: Icon(Icons.mail, size: 25,),
+        child: Icon(
+          Icons.mail,
+          size: 25,
+        ),
       ),
     );
   }
