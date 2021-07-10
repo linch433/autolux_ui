@@ -1,8 +1,13 @@
+import 'package:autolux_ui/assets/screens/aboutCompany/areaWithButtons.dart';
+import 'package:autolux_ui/assets/screens/contacts/contactsText.dart';
+import 'package:autolux_ui/assets/screens/mainScreen/searchBar.dart';
+import 'package:autolux_ui/assets/screens/onlineHelp.dart';
 import 'package:autolux_ui/assets/widget/drawerMenu.dart';
+import 'package:autolux_ui/assets/widget/pageTitle.dart';
 import 'package:flutter/material.dart';
 
-class services extends StatelessWidget {
-  const services({Key? key}) : super(key: key);
+class contacts extends StatelessWidget {
+  const contacts({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +48,6 @@ class services extends StatelessWidget {
         ],
       ),
       drawer: navigationDrawerWidget(),
-
       body: SafeArea(
         child: ListView(
           children: [
@@ -51,14 +55,27 @@ class services extends StatelessWidget {
               margin: EdgeInsets.only(bottom: 50),
             ),
             // Parts of a Screen
-
+            searchBar,
+            pageTitle(TitlePage: 'Контакти'),
+            mainButtonAreaMenu,
+            Divider(
+              color: Colors.black,
+            ),
+            contactsText(),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => onlineHelp()));
+          // Navigator.pushReplacementNamed(context, '/onlineHelp');
+        },
         tooltip: 'Online message/help',
-        child: Icon(Icons.mail, size: 25,),
+        child: Icon(
+          Icons.mail,
+          size: 25,
+        ),
       ),
     );
   }

@@ -1,10 +1,10 @@
 import 'package:autolux_ui/assets/screens/aboutCompany/aboutCompany.dart';
 import 'package:autolux_ui/assets/screens/businessClient/businessClient.dart';
-import 'package:autolux_ui/assets/screens/contacts.dart';
+import 'package:autolux_ui/assets/screens/contacts/contacts.dart';
 import 'package:autolux_ui/assets/screens/department/department.dart';
 import 'package:autolux_ui/assets/screens/news.dart';
 import 'package:autolux_ui/assets/screens/privateClient/privateClient.dart';
-import 'package:autolux_ui/assets/screens/services.dart';
+import 'package:autolux_ui/assets/screens/servicesScreen/services.dart';
 import 'package:flutter/material.dart';
 
 Widget buildMenuItem(
@@ -104,7 +104,7 @@ void selectedItem(BuildContext context, int index) {
       break;
     case 6:
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => contact(),
+        builder: (context) => contacts(),
       ));
       break;
   }
