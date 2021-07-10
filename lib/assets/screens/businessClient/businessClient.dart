@@ -57,7 +57,7 @@ class businessClient extends StatelessWidget {
             // Parts of a Screen
             searchBar,
             pageTitle(TitlePage: 'Сплата послуг'),
-            mainButtonAreaMenu,
+            mainButtonAreaMenu(),
             Divider(
               color: Colors.black,
             ),

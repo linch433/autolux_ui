@@ -57,7 +57,7 @@ class services extends StatelessWidget {
             // Parts of a Screen
             searchBar,
             pageTitle(TitlePage: 'Експрес доставка вантажів'),
-            mainButtonAreaMenu,
+            mainButtonAreaMenu(),
             Divider(
               color: Colors.black,
             ),

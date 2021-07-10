@@ -57,7 +57,7 @@ class contacts extends StatelessWidget {
             // Parts of a Screen
             searchBar,
             pageTitle(TitlePage: 'Контакти'),
-            mainButtonAreaMenu,
+            mainButtonAreaMenu(),
             Divider(
               color: Colors.black,
             ),

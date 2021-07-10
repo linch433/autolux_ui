@@ -57,7 +57,7 @@ class aboutCompany extends StatelessWidget {
             // Parts of a Screen
             searchBar,
             pageTitle(TitlePage: 'Про компанію'),
-            mainButtonAreaMenu,
+            mainButtonAreaMenu(),
             Divider(
               color: Colors.black,
             ),

@@ -59,7 +59,7 @@ class department extends StatelessWidget {
             // Parts of a Screen
             searchBar,
             pageTitle(TitlePage: 'Відділення'),
-            mainButtonAreaMenu,
+            mainButtonAreaMenu(),
             Divider(
               color: Colors.black,
             ),
