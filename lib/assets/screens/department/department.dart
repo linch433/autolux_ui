@@ -1,9 +1,11 @@
 import 'package:autolux_ui/assets/screens/aboutCompany/areaWithButtons.dart';
 import 'package:autolux_ui/assets/screens/department/departmentText.dart';
+import 'package:autolux_ui/assets/screens/department/departmentDropDownList.dart';
 import 'package:autolux_ui/assets/screens/mainScreen/searchBar.dart';
 import 'package:autolux_ui/assets/screens/onlineHelp.dart';
 import 'package:autolux_ui/assets/widget/drawerMenu.dart';
 import 'package:autolux_ui/assets/widget/pageTitle.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class department extends StatelessWidget {
@@ -61,12 +63,19 @@ class department extends StatelessWidget {
             Divider(
               color: Colors.black,
             ),
-            CircleAvatar(
-              radius: 30,
-              backgroundColor: Colors.purple,
-              child: IconButton(
-                iconSize: 33,
-                tooltip: 'Google Maps',
+
+            Expanded(
+              child: Container(
+                margin: EdgeInsets.all(20),
+                height: 50,
+                decoration: BoxDecoration(
+                  color: Colors.purple,
+                  borderRadius: BorderRadius.circular(25),
+                  border: Border.all(color: Colors.purple, width: 1.5),
+                ),
+                child: IconButton(
+                  iconSize: 33,
+                  tooltip: 'Google Maps',
                   color: Colors.white,
                   onPressed: () {
                     Navigator.push(
@@ -76,8 +85,24 @@ class department extends StatelessWidget {
                       ),
                     );
                   },
-                  icon: Icon(Icons.pin_drop_outlined), ),
+                  icon: Icon(Icons.pin_drop_outlined),
+                ),
+              ),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.deepPurple, width: 1.5),
+                  borderRadius: BorderRadius.circular(25),
+                ),
+                child: Center(child: dropDownButton())),
+            SizedBox(
+              height: 100,
+            )
           ],
         ),
       ),
