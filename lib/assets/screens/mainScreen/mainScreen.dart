@@ -58,7 +58,7 @@ class mainScreen extends StatelessWidget {
             // Parts of a Screen
             searchBar,
             mainText,
-            mainButtonMenu,
+            mainButtonMenu(),
             newsFooter,
           ],
         ),
