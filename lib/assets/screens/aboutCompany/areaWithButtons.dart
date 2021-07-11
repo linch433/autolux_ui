@@ -1,6 +1,7 @@
 import 'package:autolux_ui/assets/screens/callCourier.dart';
 import 'package:autolux_ui/assets/screens/cargoTracking.dart';
 import 'package:autolux_ui/assets/screens/servicesScreen/services.dart';
+import 'package:autolux_ui/assets/screens/servicesTariffsScreen.dart';
 import 'package:autolux_ui/assets/widget/buttonArea.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,8 @@ class mainButtonAreaMenu extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonArea(onPressed: () {}, title: 'КАЛЬКУЛЯТОР\nВАРТОСТІ', icon: Icons.calculate_outlined),
-              ButtonArea(onPressed: () {}, title: 'ТАРИФИ ТА\nДОСТАВКА', icon: Icons.account_balance_wallet_outlined),
+              ButtonArea(onPressed: () {Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => servicesAndTariffs()));}, title: 'ТАРИФИ ТА\nДОСТАВКА', icon: Icons.account_balance_wallet_outlined),
             ],
           ),
           Row(
