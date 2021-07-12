@@ -13,6 +13,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
+      // theme: ThemeData(fontFamily: 'SourceSansPro'),
       title: 'AutoLux UI template',
       initialRoute: '/',
       routes: {

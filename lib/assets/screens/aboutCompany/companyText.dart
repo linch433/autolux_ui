@@ -19,7 +19,7 @@ Widget companyText = Column(
                 children: [
                   new TextSpan(
                       text: '«Автолюкс Глобал Пост» ',
-                      style: new TextStyle(fontWeight: FontWeight.bold)),
+                      style: new TextStyle(fontWeight: FontWeight.bold,)),
                   new TextSpan(
                       text:
                           '- як оператор поштового зв’язку, здійснює діяльність під брендом'),

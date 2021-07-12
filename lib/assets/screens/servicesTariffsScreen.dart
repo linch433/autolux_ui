@@ -13,14 +13,15 @@ class servicesAndTariffs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'АВТОЛЮКС \nЕКСПРЕС ПОШТА',
-          style: TextStyle(
-            color: Colors.purple,
-            fontWeight: FontWeight.w600,
-            fontSize: 17,
-          ),
-        ),
+        title: Image.asset('lib/images/mainTitle.jpg', width: 200,),
+        // title: Text(
+        //   'АВТОЛЮКС \nЕКСПРЕС ПОШТА',
+        //   style: TextStyle(
+        //     color: Colors.purple,
+        //     fontWeight: FontWeight.w600,
+        //     fontSize: 17,
+        //   ),
+        // ),
         backgroundColor: Colors.white,
         leading: Builder(builder: (BuildContext context) {
           return Container(
