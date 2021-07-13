@@ -1,3 +1,4 @@
+import 'package:autolux_ui/assets/screens/calculator/calculator.dart';
 import 'package:autolux_ui/assets/screens/callCourier.dart';
 import 'package:autolux_ui/assets/screens/cargoTracking.dart';
 import 'package:autolux_ui/assets/screens/contacts/contacts.dart';
@@ -47,7 +48,8 @@ class mainButtonMenu extends StatelessWidget {
                       title: 'Відстеження вантажу',
                       icon: Icons.assistant_photo_outlined),
                   MyButton(
-                      onPressed: () {},
+                      onPressed: () {Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) => Calculator()));},
                       title: 'Розрахунок вартості',
                       icon: Icons.calculate_outlined),
                   MyButton(
