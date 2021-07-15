@@ -10,9 +10,15 @@
 
 ## About company
 
-[Autolux Express Post](https://autolux-post.com.ua/en/) is a Ukrainian company founded in 1997, which provides quick and convenient delivery of documents, baggage and parcels in Ukraine. The Company provides a careful delivery, including oversized cargo among the competitors. The network of representative offices of the company and own vehicle fleet allow us to make delivery more convenient service for every customer.
+[Autolux Express Post](https://autolux-post.com.ua/en/) is a *Ukrainian company* founded in 1997, which provides *quick and convenient delivery of documents, baggage and parcels in Ukraine.* The Company provides a careful delivery, including oversized cargo among the competitors. The network of representative offices of the company and own vehicle fleet allow us to make delivery more convenient service for every customer.
 
 ## Usage
+
+### How it looks like
+![main screen 1](https://github.com/linch433/autolux_ui/raw/master/img/main_screen_1.JPG)
+![main screen 2](https://github.com/linch433/autolux_ui/raw/master/img/main_screen_2.JPG)
+![main screen 3](https://github.com/linch433/autolux_ui/raw/master/img/main_screen_3.JPG)
+
 
 ### Global file
 In main.dart you can see all classes which use in this program.
