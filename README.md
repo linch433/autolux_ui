@@ -16,9 +16,9 @@
 
 ### How it looks like
 <p align="center">
-<img width=33% height=585 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_1.JPG"/>
-<img width=33% height=585 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_2.JPG"/>
-<img width=33% height=585 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_3.JPG"/>
+<img width=30% height=500 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_1.JPG"/>
+<img width=30% height=500 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_2.JPG"/>
+<img width=30% height=500 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_3.JPG"/>
 </p>
 
 ### Global file
