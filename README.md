@@ -15,10 +15,11 @@
 ## Usage
 
 ### How it looks like
-![main screen 1](https://github.com/linch433/autolux_ui/raw/master/img/main_screen_1.JPG)
-![main screen 2](https://github.com/linch433/autolux_ui/raw/master/img/main_screen_2.JPG)
-![main screen 3](https://github.com/linch433/autolux_ui/raw/master/img/main_screen_3.JPG)
-
+<p align="center">
+<img width=300 height=585 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_1.JPG"/>
+<img width=300 height=585 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_2.JPG"/>
+<img width=300 height=585 src="https://github.com/linch433/autolux_ui/raw/master/img/main_screen_3.JPG"/>
+</p>
 
 ### Global file
 In main.dart you can see all classes which use in this program.
