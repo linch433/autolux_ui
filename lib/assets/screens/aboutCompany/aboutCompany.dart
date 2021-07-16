@@ -30,7 +30,7 @@ class aboutCompany extends StatelessWidget {
             child: IconButton(
               icon: const Icon(Icons.home),
               onPressed: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.pushReplacementNamed(context, '/');
               },
               color: Colors.deepOrange,
               iconSize: 37,
@@ -70,7 +70,6 @@ class aboutCompany extends StatelessWidget {
         onPressed: () {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (context) => onlineHelp()));
-          // Navigator.pushReplacementNamed(context, '/onlineHelp');
         },
         tooltip: 'Online message/help',
         child: Icon(

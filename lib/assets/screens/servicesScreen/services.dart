@@ -30,7 +30,7 @@ class services extends StatelessWidget {
             child: IconButton(
               icon: const Icon(Icons.home),
               onPressed: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.pushReplacementNamed(context, '/');
               },
               color: Colors.deepOrange,
               iconSize: 37,

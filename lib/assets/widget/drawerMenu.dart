@@ -1,10 +1,3 @@
-import 'package:autolux_ui/assets/screens/aboutCompany/aboutCompany.dart';
-import 'package:autolux_ui/assets/screens/businessClient/businessClient.dart';
-import 'package:autolux_ui/assets/screens/contacts/contacts.dart';
-import 'package:autolux_ui/assets/screens/department/department.dart';
-import 'package:autolux_ui/assets/screens/news.dart';
-import 'package:autolux_ui/assets/screens/privateClient/privateClient.dart';
-import 'package:autolux_ui/assets/screens/servicesScreen/services.dart';
 import 'package:flutter/material.dart';
 
 Widget buildMenuItem(
@@ -39,73 +32,33 @@ class navigationDrawerWidget extends StatelessWidget {
               buildMenuItem(
                   text: 'Про компанію',
                   icon: Icons.apartment,
-                  onClicked: () => selectedItem(context, 0)),
+                  onClicked: () => Navigator.pushReplacementNamed(context, '/aboutCompany')),
               buildMenuItem(
                   text: 'Бізнес-клієнтам',
                   icon: Icons.people,
-                  onClicked: () => selectedItem(context, 1)),
+                  onClicked: () => Navigator.pushReplacementNamed(context, '/businessClient')),
               buildMenuItem(
                   text: 'Приватним клієнтам',
                   icon: Icons.privacy_tip,
-                  onClicked: () => selectedItem(context, 2)),
+                  onClicked: () => Navigator.pushReplacementNamed(context, '/privateClient')),
               buildMenuItem(
                   text: 'Новини',
                   icon: Icons.web,
-                  onClicked: () => selectedItem(context, 3)),
+                  onClicked: () => Navigator.pushReplacementNamed(context, '/news')),
               buildMenuItem(
                   text: 'Відділення',
                   icon: Icons.location_on_outlined,
-                  onClicked: () => selectedItem(context, 4)),
+                  onClicked: () => Navigator.pushReplacementNamed(context, '/department')),
               buildMenuItem(
                   text: 'Послуги',
                   icon: Icons.shopping_cart,
-                  onClicked: () => selectedItem(context, 5)),
+                  onClicked: () => Navigator.pushReplacementNamed(context, '/services')),
               buildMenuItem(
                   text: 'Контакти',
                   icon: Icons.contact_support,
-                  onClicked: () => selectedItem(context, 6)),
+                  onClicked: () => Navigator.pushReplacementNamed(context, '/contact')),
             ],
           )),
     );
-  }
-}
-
-void selectedItem(BuildContext context, int index) {
-  switch (index) {
-    case 0:
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => aboutCompany(),
-      ));
-      break;
-    case 1:
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => businessClient(),
-      ));
-      break;
-    case 2:
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => privateClient(),
-      ));
-      break;
-    case 3:
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => news(),
-      ));
-      break;
-    case 4:
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => department(),
-      ));
-      break;
-    case 5:
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => services(),
-      ));
-      break;
-    case 6:
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => contacts(),
-      ));
-      break;
   }
 }
